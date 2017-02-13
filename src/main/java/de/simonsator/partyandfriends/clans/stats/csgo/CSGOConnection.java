@@ -12,8 +12,8 @@ import java.util.UUID;
  * @author simonbrungs
  * @version 1.0.0 30.11.16
  */
-public class BTCConnection extends SQLCommunication {
-	protected BTCConnection(String pDatabase, String pURL, String pUserName, String pPassword) {
+public class CSGOConnection extends SQLCommunication {
+	protected CSGOConnection(String pDatabase, String pURL, String pUserName, String pPassword) {
 		super(pDatabase, pURL, pUserName, pPassword);
 	}
 

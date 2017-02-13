@@ -2,5 +2,5 @@ name: CSGO-Clan-Stats
 version: ${project.version}
 author: Simonsator
 depends: [Clans]
-main: de.simonsator.partyandfriends.clans.stats.csgo.BTCMain
+main: de.simonsator.partyandfriends.clans.stats.csgo.CSGOMain
 description: Provides stats for clans for csgo

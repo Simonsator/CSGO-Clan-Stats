@@ -9,8 +9,8 @@ import java.io.IOException;
  * @author simonbrungs
  * @version 1.0.0 30.11.16
  */
-public class BTCConfig extends ConfigurationCreator {
-	protected BTCConfig(File file) throws IOException {
+public class CSGOConfig extends ConfigurationCreator {
+	protected CSGOConfig(File file) throws IOException {
 		super(file);
 		readFile();
 		loadDefaultValues();
@@ -26,6 +26,6 @@ public class BTCConfig extends ConfigurationCreator {
 	}
 
 	public void reloadConfiguration() throws IOException {
-		configuration = (new BTCConfig(FILE)).getCreatedConfiguration();
+		configuration = (new CSGOConfig(FILE)).getCreatedConfiguration();
 	}
 }

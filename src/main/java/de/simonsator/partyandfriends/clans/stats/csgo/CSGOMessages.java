@@ -10,9 +10,9 @@ import java.io.IOException;
  * @author simonbrungs
  * @version 1.0.0 30.11.16
  */
-public class BTCMessages extends LanguageConfiguration {
+public class CSGOMessages extends LanguageConfiguration {
 
-	public BTCMessages(Language pLanguage, File pFile) throws IOException {
+	public CSGOMessages(Language pLanguage, File pFile) throws IOException {
 		super(pLanguage, pFile);
 		readFile();
 		loadDefaultValues();
@@ -30,6 +30,6 @@ public class BTCMessages extends LanguageConfiguration {
 	}
 
 	public void reloadConfiguration() throws IOException {
-		configuration = (new BTCMessages(LANGUAGE.OWN, FILE)).getCreatedConfiguration();
+		configuration = (new CSGOMessages(LANGUAGE.OWN, FILE)).getCreatedConfiguration();
 	}
 }

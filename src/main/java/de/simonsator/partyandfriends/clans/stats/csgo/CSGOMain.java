@@ -16,22 +16,22 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * @author simonbrungs
+ * @author simonsator
  * @version 1.0.0 20.01.17
  */
-public class BTCMain extends Plugin implements ClanStat {
+public class CSGOMain extends Plugin implements ClanStat {
 	private Configuration config;
-	private BTCConnection connection;
+	private CSGOConnection connection;
 	private Configuration messagesConfig;
 
 	public void onEnable() {
 		try {
-			config = (new BTCConfig(new File(getDataFolder(), "config.yml"))).getCreatedConfiguration();
-			messagesConfig = (new BTCMessages(Language.OWN, new File(getDataFolder(), "messages.yml"))).getCreatedConfiguration();
+			config = (new CSGOConfig(new File(getDataFolder(), "config.yml"))).getCreatedConfiguration();
+			messagesConfig = (new CSGOMessages(Language.OWN, new File(getDataFolder(), "messages.yml"))).getCreatedConfiguration();
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
-		connection = new BTCConnection(config.getString("database.db"), "jdbc:mysql://" + config.getString("database.host") + ":" + config.getInt("database.port"), config.getString("database.user"), config.getString("database.password"));
+		connection = new CSGOConnection(config.getString("database.db"), "jdbc:mysql://" + config.getString("database.host") + ":" + config.getInt("database.port"), config.getString("database.user"), config.getString("database.password"));
 		((Stats) ClanCommands.getInstance().getSubCommand(Stats.class)).registerClanStats(this, this);
 	}
 
