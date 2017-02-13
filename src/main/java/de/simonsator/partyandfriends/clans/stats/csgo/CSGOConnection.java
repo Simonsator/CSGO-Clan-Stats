@@ -23,12 +23,12 @@ public class CSGOConnection extends SQLCommunication {
 		PreparedStatement prepStmt = null;
 		try {
 			prepStmt = con.prepareStatement(
-					"SELECT KILLS, DEATHS, HEADSHOTS, BOMBPLANTED Tode FROM `" + DATABASE + "`.`CounterStrike` WHERE UUID=? LIMIT 1");
+					"SELECT KILLS, DEATHS, HEADSHOTS, BOMBPLANTED FROM `" + DATABASE + "`.`CounterStrike` WHERE UUID=? LIMIT 1");
 			prepStmt.setString(1, pUUID.toString());
 			rs = prepStmt.executeQuery();
 			if (rs.next())
-				return new PlayerData(rs.getInt("KILLS"), rs.getInt("DEATHS"), rs.getInt("HEAD_SHOTS"),
-						rs.getInt("BOMB_PLANTED"));
+				return new PlayerData(rs.getInt("KILLS"), rs.getInt("DEATHS"), rs.getInt("HEADSHOTS"),
+						rs.getInt("BOMBPLANTED"));
 		} catch (SQLException e) {
 			e.printStackTrace();
 			return null;
