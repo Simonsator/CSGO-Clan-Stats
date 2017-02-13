@@ -24,8 +24,8 @@ public class CSGOMessages extends LanguageConfiguration {
 		set("ClanStats.Name", "CSGO");
 		set("ClanStats.BombPlanted", "&7The clan planted &a[BOMB_PLANTED] &7bombs.");
 		set("ClanStats.HeadShots", "&7The players in the clan had &a[HEAD_SHOTS] &7head shots.");
-		set("ClanStats.Kills", "&7The players in the clan killed &c[KILLS]&7 players.");
-		set("ClanStats.Deaths", "&7The players in the clan died &a[DEATHS] &7times.");
+		set("ClanStats.Kills", "&7The players in the clan killed &a[KILLS]&7 players.");
+		set("ClanStats.Deaths", "&7The players in the clan died &c[DEATHS] &7times.");
 	}
 
 	public void reloadConfiguration() throws IOException {
