@@ -7,7 +7,7 @@ import java.io.File;
 import java.io.IOException;
 
 /**
- * @author simonbrungs
+ * @author Simonsator
  * @version 1.0.0 30.11.16
  */
 public class CSGOMessages extends LanguageConfiguration {
@@ -22,11 +22,10 @@ public class CSGOMessages extends LanguageConfiguration {
 
 	private void loadDefaultValues() {
 		set("ClanStats.Name", "CSGO");
-		set("ClanStats.Wins", "&7Der Clan hat &a[WON] &7Spiele gewonnen.");
-		set("ClanStats.Played", "&7Der Clan hat &a[GAMES] &7Spiele gespielt.");
-		set("ClanStats.Points", "&7Der Clan hat &a[POINTS] &7Punkte.");
-		set("ClanStats.Deaths", "&7Die Leute in diesem Clan sind insgesammt &a[DEATHS]&7 mal gestorben.");
-		set("ClanStats.Kills", "&7Die Leute in diesem Clan haben &a[KILLS] &7Leute getötet.");
+		set("ClanStats.BombPlanted", "&7The clan planted &a[BOMB_PLANTED] &7bombs.");
+		set("ClanStats.HeadShots", "&7The players in the clan had &a[HEAD_SHOTS] &7head shots.");
+		set("ClanStats.Kills", "&7The players in the clan killed &c[KILLS]&7 players.");
+		set("ClanStats.Deaths", "&7The players in the clan died &a[DEATHS] &7times.");
 	}
 
 	public void reloadConfiguration() throws IOException {

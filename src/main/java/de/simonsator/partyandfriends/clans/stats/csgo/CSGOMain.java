@@ -54,7 +54,7 @@ public class CSGOMain extends Plugin implements ClanStat {
 			kills += data.KILLS;
 		}
 		pSender.sendMessage(messagesConfig.getString("ClanStats.BombPlanted").replace("[BOMB_PLANTED]", bombPlanted + ""));
-		pSender.sendMessage(messagesConfig.getString("ClanStats.Points").replace("[POINTS]", headShots + ""));
+		pSender.sendMessage(messagesConfig.getString("ClanStats.HeadShots").replace("[HEAD_SHOTS]", headShots + ""));
 		pSender.sendMessage(messagesConfig.getString("ClanStats.Deaths").replace("[DEATHS]", deaths + ""));
 		pSender.sendMessage(messagesConfig.getString("ClanStats.Kills").replace("[KILLS]", kills + ""));
 	}
